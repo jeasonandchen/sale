@@ -1,5 +1,14 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <search></search>
+    <router-view></router-view>
   </div>
 </template>
+<script>
+import search from './../components/search'
+export default {
+  components: {
+    search
+  }
+}
+</script>

@@ -12,13 +12,20 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: '包含顶部和底部的容器',
       component: Home,
       children: [
         {
           path: '/mhome',
-          name: 'mhome',
-          component: () => import('./views/mhome.vue')
+          name: '包含搜索的容器',
+          component: () => import('./views/mhome.vue'),
+          children: [
+            {
+              path: 'homepage',
+              name: '主页',
+              component: () => import('./views/homepage.vue')
+            }
+          ]
         }
       ]
     }

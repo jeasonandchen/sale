@@ -2,6 +2,6 @@
   <div class="banner">
     <a>登陆</a>
     <span>/</span>
-    <span>注册</span>
+    <a>注册</a>
   </div>
 </template>
