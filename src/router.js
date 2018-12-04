@@ -3,6 +3,9 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper)
 Vue.use(Router)
 Vue.use(iView)
 
